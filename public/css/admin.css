@@ -1,0 +1,265 @@
+body {
+    direction: ltr;
+    text-align: left;
+    font-family: T, cv-linear, l, sans-serif, IRANSansWeb, serif;
+    position: absolute;
+    width: 100%;
+    background: #1a1b1cba;
+    min-height: 800px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.page_sidebar {
+    width: 240px;
+    background: #263238ba;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/IRANSansWeb.eot') format("embedded-opentype"),
+    url('../fonts/IRANSansWeb.woff') format("woff"),
+    url('../fonts/IRANSansWeb.ttf') format("truetype");
+    font-size: 15px;
+
+}
+
+#sidebar_menu {
+    padding: 0;
+    margin-top: 60px;
+}
+
+#sidebar_menu li {
+    list-style: none;
+}
+
+#sidebar_menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.child_menu {
+    padding-top: 10px !important;
+    background: #546064;
+    display: none;
+}
+
+.child_menu a {
+    width: 100%;
+    font-size: 13px !important;
+    padding-top: 5px !important;
+}
+
+#sidebar_menu .fa-angle-right {
+    float: right;
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+#sidebar_menu .active {
+    background: #00bfd6;
+}
+
+.page_sidebar .fa-bars {
+    color: white;
+    font-size: 18px;
+    float: right;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.toggled {
+    width: 50px !important;
+}
+
+.toggled .sidebar_menu_text {
+    display: none;
+}
+
+.toggled .fa-angle-right {
+    display: none;
+}
+
+.toggled .fa-angle-down {
+    display: none;
+}
+
+.toggled #sidebar_menu li a {
+    text-align: center;
+}
+
+.toggled .child_menu {
+    margin-left: 50px;
+    width: 230px !important;
+    position: absolute;
+    margin-top: -42px;
+    z-index: 999999;
+    border-left: 1px solid #E1E1E1;
+}
+
+.toggled .child_menu a {
+    text-align: left !important;
+}
+
+.page_content {
+    margin-left: 240px;
+}
+
+.content_box {
+    width: 97%;
+    margin: 40px auto;
+}
+
+.panel {
+    background: white;
+    width: 100%;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.panel .header {
+    padding-left: 15px;
+    height: 45px;
+    border-bottom: 1px solid #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.panel .panel_content {
+    padding: 10px;
+}
+
+.form-control {
+    width: 300px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    font-size: 13px;
+    display: inline-block;
+}
+
+label {
+    width: 250px;
+    font-size: 14px;
+    color: #686868;
+
+}
+
+.has_error {
+    color: red;
+    font-size: 12px;
+}
+
+.bootstrap-select .dropdown-toggle {
+    width: 300px;
+}
+
+.bootstrap-select .btn-light {
+    background: white !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.bootstrap-select .dropdown-menu {
+    overflow-x: hidden !important;
+    width: 300px;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #f6f8fa;
+}
+
+.table tr th {
+    font-size: 15px;
+    text-align: center;
+}
+
+.table tr td {
+    text-align: center;
+}
+
+.panel .bootstrap-select .dropdown-menu li a {
+    font-size: 13px;
+}
+
+#bs-select-1-0 {
+    display: none;
+}
+
+.message_div {
+    background: rgba(225, 225, 225, 0.5);
+    width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+.message_box {
+    background: #ffffff;
+    width: 360px;
+    height: 135px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 7px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.message_box a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.message_box #msg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.message_box .alert {
+    padding: 5px 30px 5px 30px;
+}
+
+.message_box .alert-danger {
+    margin-right: 10px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.dropdown-item.off {
+    color: #999999 !important;
+}
+.dropdown .dropdown-menu {
+    text-align: left;
+    font-size: 13px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.dropdown-menu .dropdown-item {
+    padding: 5px;
+}
